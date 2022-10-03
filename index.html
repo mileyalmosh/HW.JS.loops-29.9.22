@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>loops</title>
+</head>
+<body>
+    <hr>
+    <p>number: <input id="id_num" type="number" /></p>
+    
+    <p>click here : <button type="button" onclick="buttonClick()">Click me!</button></p>
+    <script>
+        
+        function buttonClick() {
+            
+            x = parseInt(document.getElementById('id_num').value)
+            result = 0;
+
+            while (x > 10) {
+                x = Math.floor(x / 10);
+                document.write(`${x} <br/>`)
+            result++
+            }     
+        }
+        
+    </script>
+</body>
+</html>
